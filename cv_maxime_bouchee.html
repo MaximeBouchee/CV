@@ -10,351 +10,193 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.3;
             color: #333;
             background: #f5f5f5;
-            padding: 20px;
+            padding: 8px;
         }
-
         .container {
             max-width: 900px;
             margin: 0 auto;
             background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 12px;
         }
-
         .header {
             background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
-            padding: 40px;
+            padding: 15px;
+            margin: -12px -12px 15px -12px;
+        }
+        .header-content {
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 15px;
         }
-
-        .photo-container {
-            flex-shrink: 0;
-        }
-
         .photo-placeholder {
-            width: 120px;
-            height: 120px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             background: #ecf0f1;
-            border: 4px solid white;
+            border: 3px solid white;
             object-fit: cover;
+            flex-shrink: 0;
         }
-
-        .header-content {
-            flex: 1;
-        }
-
         .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 1.6em;
+            margin-bottom: 4px;
             font-weight: 300;
         }
-
         .header .title {
-            font-size: 1.3em;
-            margin-bottom: 20px;
+            font-size: 1em;
+            margin-bottom: 8px;
             opacity: 0.9;
         }
-
         .contact-info {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             flex-wrap: wrap;
-            font-size: 0.95em;
+            font-size: 0.8em;
         }
-
         .contact-info span {
             color: #ecf0f1;
         }
-
         .main-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 0;
         }
-
         .left-column {
-            padding: 40px;
+            padding: 0 15px 0 0;
         }
-
         .right-column {
             background: #f8f9fa;
-            padding: 40px 30px;
+            padding: 12px;
             border-left: 1px solid #e0e0e0;
         }
-
         .section {
-            margin-bottom: 35px;
+            margin-bottom: 10px;
         }
-
         .section h2 {
             color: #2c3e50;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #3498db;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid #3498db;
         }
-
         .right-column .section h2 {
-            font-size: 1.3em;
+            font-size: 1em;
         }
-
-        .experience-item, .education-item {
-            margin-bottom: 25px;
+        .experience-item {
+            margin-bottom: 12px;
         }
-
         .experience-item h3 {
             color: #2c3e50;
-            font-size: 1.1em;
-            margin-bottom: 5px;
+            font-size: 0.95em;
+            margin-bottom: 2px;
         }
-
         .company {
             color: #3498db;
             font-weight: 600;
-            font-size: 1em;
-            margin-bottom: 3px;
+            font-size: 0.9em;
+            margin-bottom: 1px;
         }
-
         .period {
             color: #7f8c8d;
-            font-size: 0.9em;
-            margin-bottom: 5px;
+            font-size: 0.8em;
+            margin-bottom: 2px;
         }
-
         .location {
             color: #95a5a6;
-            font-size: 0.85em;
+            font-size: 0.75em;
             font-style: italic;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
-
         .description {
             color: #555;
-            font-size: 0.95em;
-            line-height: 1.5;
+            font-size: 0.8em;
+            line-height: 1.2;
         }
-
+        .mission-item {
+            margin-bottom: 8px;
+            margin-left: 8px;
+        }
+        .mission-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.85em;
+            margin-bottom: 2px;
+        }
         .skills-list {
             list-style: none;
+            font-size: 0.8em;
         }
-
         .skills-list li {
-            padding: 8px 0;
+            padding: 3px 0;
             border-bottom: 1px solid #e0e0e0;
-            font-size: 0.95em;
         }
-
         .skills-list li:last-child {
             border-bottom: none;
         }
-
         .skills-list li:before {
             content: "▸ ";
             color: #3498db;
             font-weight: bold;
         }
-
         .languages-list {
             list-style: none;
+            font-size: 0.8em;
         }
-
         .languages-list li {
-            margin-bottom: 10px;
-            font-size: 0.95em;
+            margin-bottom: 5px;
         }
-
         .language-name {
             font-weight: 600;
             color: #2c3e50;
         }
-
         .language-level {
             color: #7f8c8d;
-            font-size: 0.9em;
+            font-size: 0.75em;
         }
-
+        .education-item {
+            margin-bottom: 8px;
+        }
         .education-item h3 {
             color: #2c3e50;
-            font-size: 1em;
-            margin-bottom: 5px;
+            font-size: 0.85em;
+            margin-bottom: 2px;
         }
-
         .degree {
             color: #555;
-            font-size: 0.95em;
-            margin-bottom: 3px;
+            font-size: 0.8em;
+            margin-bottom: 1px;
         }
-
         @media print {
             body {
                 background: white;
                 padding: 0;
                 margin: 0;
             }
-
             .container {
                 box-shadow: none;
                 max-width: 100%;
                 margin: 0;
+                padding: 4px;
             }
-
             .header {
-                padding: 25px 30px;
-                page-break-after: avoid;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-                color-adjust: exact;
+                margin: 0;
+                padding: 10px 15px;
             }
-
-            .header h1 {
-                font-size: 2em;
-                margin-bottom: 5px;
-            }
-
-            .header .title {
-                font-size: 1.1em;
-                margin-bottom: 10px;
-            }
-
-            .photo-placeholder {
-                width: 90px;
-                height: 90px;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-
-            .contact-info {
-                font-size: 0.85em;
-                gap: 12px;
-            }
-
             .main-content {
-                display: grid;
                 grid-template-columns: 2fr 1fr;
-                gap: 0;
             }
-
             .left-column {
-                padding: 25px 30px;
+                padding: 0 10px 0 0;
             }
-
             .right-column {
-                padding: 25px 20px;
-                background: #f8f9fa;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-
-            .section {
-                margin-bottom: 18px;
-                page-break-inside: avoid;
-            }
-
-            .section h2 {
-                font-size: 1.15em;
-                margin-bottom: 10px;
-                padding-bottom: 5px;
-                border-bottom: 2px solid #3498db;
-            }
-
-            .right-column .section h2 {
-                font-size: 1em;
-            }
-
-            .experience-item {
-                margin-bottom: 14px;
-                page-break-inside: avoid;
-            }
-
-            .experience-item h3 {
-                font-size: 0.95em;
-                margin-bottom: 3px;
-            }
-
-            .company {
-                font-size: 0.9em;
-                margin-bottom: 2px;
-            }
-
-            .period {
-                font-size: 0.8em;
-                margin-bottom: 3px;
-            }
-
-            .location {
-                font-size: 0.75em;
-                margin-bottom: 5px;
-            }
-
-            .description {
-                font-size: 0.8em;
-                line-height: 1.35;
-            }
-
-            .description strong {
-                font-size: 0.85em;
-            }
-
-            .description br {
-                content: "";
-                display: block;
-                margin: 3px 0;
-            }
-
-            .education-item {
-                margin-bottom: 10px;
-            }
-
-            .education-item h3 {
-                font-size: 0.85em;
-                margin-bottom: 2px;
-            }
-
-            .degree {
-                font-size: 0.8em;
-                margin-bottom: 1px;
-            }
-
-            .education-item .period {
-                font-size: 0.75em;
-            }
-
-            .skills-list li {
-                padding: 5px 0;
-                font-size: 0.8em;
-            }
-
-            .languages-list li {
-                margin-bottom: 6px;
-                font-size: 0.8em;
-            }
-
-            .language-name {
-                font-size: 0.85em;
-            }
-
-            .language-level {
-                font-size: 0.75em;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
-            }
-
-            .right-column {
-                border-left: none;
-                border-top: 1px solid #e0e0e0;
+                padding: 10px;
             }
         }
     </style>
@@ -362,16 +204,16 @@
 <body>
 <div class="container">
     <div class="header">
-        <div class="photo-container">
-            <img src="photo.jpg" alt="Photo de Maxime Bouchée" class="photo-placeholder">
-        </div>
         <div class="header-content">
-            <h1>Maxime Bouchée</h1>
-            <div class="title">Software Engineer</div>
-            <div class="contact-info">
-                <span>📧 boucheemaxime@gmail.com</span>
-                <span>📍 Île-de-France</span>
-                <span>🔗 linkedin.com/in/bouchee-maxime</span>
+            <img src="photo.jpg" alt="Photo de profil" class="photo-placeholder">
+            <div>
+                <h1>Maxime Bouchée</h1>
+                <div class="title">Développeur Fullstack</div>
+                <div class="contact-info">
+                    <span>📧 boucheemaxime@gmail.com</span>
+                    <span>📍 Île-de-France</span>
+                    <span>🔗 linkedin.com/in/bouchee-maxime</span>
+                </div>
             </div>
         </div>
     </div>
@@ -379,50 +221,84 @@
     <div class="main-content">
         <div class="left-column">
             <div class="section">
-                <h2>Expérience Professionnelle</h2>
+                <h2>À propos</h2>
+                <p class="description">
+                    Convaincu que la <strong>technologie sert les humains</strong>, je m’épanouis dans des équipes où
+                    <strong>l’entraide</strong> et les <strong>bonnes pratiques</strong> sont au cœur du processus.
+                    <br>
+                    Mon objectif ? <strong>Contribuer à des projets qui ont du sens</strong>, en alliant expertise technique
+                    et <strong>écoute des besoins métiers</strong>.
+                </p>
+            </div>
 
+            <div class="section">
+                <h2>Expérience Professionnelle</h2>
                 <div class="experience-item">
                     <h3>Développeur Fullstack</h3>
                     <div class="company">KERIALIS</div>
-                    <div class="period">Octobre 2024 - Présent</div>
-                    <div class="location">Île-de-France, France</div>
+                    <div class="period">Oct. 2024 - Présent</div>
+                    <div class="location">Île-de-France</div>
                     <div class="description">
-                        Développeur au sein de la DSI avec pour mission la maintenance de l'ensemble des applications internes (clients lourds et sites web) et le développement de nouveaux projets. Mise en œuvre d'une stratégie de sortie du legacy tout en délivrant de la valeur aux équipes métiers. Accompagnement à la migration vers une gestion de projet informatique plus agile avec support au métier dans les cadrages et le découpage des projets.
-                        <br>
-                        <strong>Technologies :</strong> C#, DDD, Azure DevOps, Microsoft Azure, Architecture, stratégie de test
+                        Maintenance et évolution des applications internes (clients lourds/web).
+                        Migration du legacy vers une architecture moderne.
+                        <br>C#, DDD, Azure DevOps, Microsoft Azure
                     </div>
                 </div>
 
                 <div class="experience-item">
-                    <h3>Développeur Fullstack</h3>
+                    <h3>Consultant Développeur Fullstack</h3>
                     <div class="company">OCTO Technology</div>
-                    <div class="period">Novembre 2020 - Septembre 2024 (3 ans 11 mois)</div>
-                    <div class="location">Paris, France</div>
-                    <div class="description">
-                        <strong>Mission Ministère de l'Intérieur (depuis Avril 2023) :</strong> Création du site "Mes points permis" (3,5 millions d'utilisateurs) pour consulter les informations de permis de conduire et développement d'un système d'authentification commun. Équipe de 7 personnes au sein d'un programme de 10 équipes.
-                        <br>
-                        <strong>Technologies :</strong> Java 21, GitLab, AWS, Terraform, Ansible, React, SAFE, tests de performance
-                        <br><br>
-                        <strong>Mission Renault Banque - RCI (14 mois) :</strong> Création d'une application bancaire pour Renault Allemagne avec implémentation d'un système "bank as a service" pour gérer une carte de crédit. Référent technique sur l'API bancaire fournie par le prestataire. Formation et accompagnement d'équipes internationales.
-                        <br>
-                        <strong>Technologies :</strong> Kotlin, GitLab, Flutter, DDD
-                        <br><br>
-                        <strong>Mission SACEM (9 mois) :</strong> Développement d'un ETL pour l'ingestion automatique des œuvres audiovisuelles et gestion de la répartition des droits. Équipe de 4 personnes.
-                        <br>
-                        <strong>Technologies :</strong> Java 19, GitLab, AWS, Terraform, Ansible
-                        <br><br>
-                        Animation de sessions bimensuelles sur les bonnes pratiques de développement.
+                    <div class="period">Nov. 2020 - Sept. 2024</div>
+                    <div class="location">Paris</div>
+
+                    <div class="mission-item">
+                        <div class="mission-title">Ministère de l'Intérieur (Avr. 2023 - Sept. 2024)</div>
+                        <div class="description">
+                            Création du site "Mes points permis" (3,5M d’utilisateurs) pour consulter les informations de permis de conduire.
+                            Développement d’un système d’authentification commun.
+                            <br><strong>Tech :</strong> Java 21, GitLab, AWS, Terraform, Ansible, React, SAFE, tests de performance
+                        </div>
+                    </div>
+
+                    <div class="mission-item">
+                        <div class="mission-title">Renault Banque - RCI (Fév. 2022 - Mars 2023)</div>
+                        <div class="description">
+                            Création d’une application bancaire pour Renault Allemagne avec implémentation d’un système "bank as a service" pour gérer une carte de crédit.
+                            Référent technique sur l’API bancaire fournie par le prestataire. Formation et accompagnement d’équipes internationales.
+                            <br><strong>Tech :</strong> Kotlin, GitLab, Flutter, DDD
+                        </div>
+                    </div>
+
+                    <div class="mission-item">
+                        <div class="mission-title">SACEM (Mars 2021 - Janv. 2022)</div>
+                        <div class="description">
+                            Développement d’un ETL pour l’ingestion des œuvres audiovisuelles.
+                            <br><strong>Tech :</strong> Java 19, GitLab, AWS, Terraform
+                        </div>
                     </div>
                 </div>
 
+                <!-- SII -->
                 <div class="experience-item">
-                    <h3>Ingénieur d'Études</h3>
-                    <div class="company">Groupe SII | Akka Technologies</div>
-                    <div class="period">Octobre 2018 - Avril 2020</div>
+                    <h3>Ingénieur d’Études</h3>
+                    <div class="company">Groupe SII</div>
+                    <div class="period">Juil. 2019 - Mars 2020</div>
+                    <div class="location">Île-de-France</div>
                     <div class="description">
                         Développement de logiciels embarqués pour Thales.
-                        <br>
-                        <strong>Technologies :</strong> ADA, C++, Linux
+                        <br>ADA, Linux, Agilité
+                    </div>
+                </div>
+
+                <!-- Akka -->
+                <div class="experience-item">
+                    <h3>Ingénieur d’Études</h3>
+                    <div class="company">Akka Technologies</div>
+                    <div class="period">Oct. 2018 - Juin 2019</div>
+                    <div class="location">Bordeaux</div>
+                    <div class="description">
+                        Développement de logiciels embarqués pour Thales.
+                        <br>C++, Linux, TMA
                     </div>
                 </div>
             </div>
@@ -432,10 +308,10 @@
             <div class="section">
                 <h2>Compétences</h2>
                 <ul class="skills-list">
-                    <li>.NET Framework</li>
-                    <li>Modernisation des systèmes hérités</li>
-                    <li>Approche pragmatique</li>
-                    <li>Domain-Driven Design (DDD)</li>
+                    <li>Langages : C#, Java, Kotlin</li>
+                    <li>Cloud : Azure, AWS</li>
+                    <li>DevOps : Terraform, Ansible, GitLab</li>
+                    <li>Méthodes : DDD, Agile, Tests automatisés</li>
                 </ul>
             </div>
 
@@ -455,25 +331,21 @@
 
             <div class="section">
                 <h2>Formation</h2>
-
                 <div class="education-item">
                     <h3>DDD Europe</h3>
-                    <div class="degree">DDD in C#</div>
-                    <div class="period">Mars 2025 - Avril 2025</div>
+                    <div class="degree">Formation DDD in C#</div>
+                    <div class="period">2025</div>
                 </div>
-
                 <div class="education-item">
                     <h3>Diplôme d'Ingénieur</h3>
                     <div class="degree">SeaTech - IRIS</div>
                     <div class="period">2015 - 2018</div>
                 </div>
-
                 <div class="education-item">
                     <h3>Master Vision Commande</h3>
                     <div class="degree">Université de Toulon</div>
                     <div class="period">2017 - 2018</div>
                 </div>
-
                 <div class="education-item">
                     <h3>Classe Prépa TSI</h3>
                     <div class="degree">Lycée Gustave Eiffel</div>
