@@ -22,13 +22,13 @@
             margin: 0 auto;
             background: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            padding: 12px;
+            padding: 12px 30px;
         }
         .header {
             background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
-            padding: 15px;
-            margin: -12px -12px 15px -12px;
+            padding: 15px 20px;
+            margin: -12px -30px 15px -30px;
         }
         .header-content {
             display: flex;
@@ -66,10 +66,10 @@
         .main-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap: 0;
+            gap: 20px;
         }
         .left-column {
-            padding: 0 15px 0 0;
+            padding: 0;
         }
         .right-column {
             background: #f8f9fa;
@@ -183,17 +183,18 @@
                 box-shadow: none;
                 max-width: 100%;
                 margin: 0;
-                padding: 4px;
+                padding: 4px 25px;
             }
             .header {
-                margin: 0;
-                padding: 10px 15px;
+                margin: 0 -25px 15px -25px;
+                padding: 10px 20px;
             }
             .main-content {
                 grid-template-columns: 2fr 1fr;
+                gap: 15px;
             }
             .left-column {
-                padding: 0 10px 0 0;
+                padding: 0;
             }
             .right-column {
                 padding: 10px;
@@ -223,8 +224,8 @@
             <div class="section">
                 <h2>À propos</h2>
                 <p class="description">
-                    Convaincu que la <strong>technologie sert les humains</strong>, je m’épanouis dans des équipes où
-                    <strong>l’entraide</strong> et les <strong>bonnes pratiques</strong> sont au cœur du processus.
+                    Convaincu que la <strong>technologie sert les humains</strong>, je m'épanouis dans des équipes où
+                    <strong>l'entraide</strong> et les <strong>bonnes pratiques</strong> sont au cœur du processus.
                     <br>
                     Mon objectif ? <strong>Contribuer à des projets qui ont du sens</strong>, en alliant expertise technique
                     et <strong>écoute des besoins métiers</strong>.
@@ -241,7 +242,13 @@
                     <div class="description">
                         Maintenance et évolution des applications internes (clients lourds/web).
                         Migration du legacy vers une architecture moderne.
-                        <br>C#, DDD, Azure DevOps, Microsoft Azure
+                    </div>
+                    <div class="mission-item">
+                        <div class="mission-title">Automatisation de la récupération des indemnités journalières</div>
+                        <div class="description">
+                            Développement d'un système automatisé pour la récupération des indemnités journalières auprès du service PREST-IJ de la Cnam. Architecture event-sourcing pour garantir la traçabilité et la fiabilité du traitement.
+                            <br><strong>Tech :</strong> C#, DDD, Event-sourcing, Azure DevOps, Microsoft Azure
+                        </div>
                     </div>
                 </div>
 
@@ -254,17 +261,17 @@
                     <div class="mission-item">
                         <div class="mission-title">Ministère de l'Intérieur (Avr. 2023 - Sept. 2024)</div>
                         <div class="description">
-                            Création du site "Mes points permis" (3,5M d’utilisateurs) pour consulter les informations de permis de conduire.
-                            Développement d’un système d’authentification commun.
-                            <br><strong>Tech :</strong> Java 21, GitLab, AWS, Terraform, Ansible, React, SAFE, tests de performance
+                            Création du site "Mes points permis" (3,5M d'utilisateurs) pour consulter les informations de permis de conduire.
+                            Développement d'un système d'authentification commun.
+                            <br><strong>Tech :</strong> Java, GitLab, AWS, Terraform, Ansible, React, SAFE, tests de performance
                         </div>
                     </div>
 
                     <div class="mission-item">
                         <div class="mission-title">Renault Banque - RCI (Fév. 2022 - Mars 2023)</div>
                         <div class="description">
-                            Création d’une application bancaire pour Renault Allemagne avec implémentation d’un système "bank as a service" pour gérer une carte de crédit.
-                            Référent technique sur l’API bancaire fournie par le prestataire. Formation et accompagnement d’équipes internationales.
+                            Création d'une application bancaire pour Renault Allemagne avec implémentation d'un système "bank as a service" pour gérer une carte de crédit.
+                            Référent technique sur l'API bancaire fournie par le prestataire. Formation et accompagnement d'équipes internationales.
                             <br><strong>Tech :</strong> Kotlin, GitLab, Flutter, DDD
                         </div>
                     </div>
@@ -272,15 +279,15 @@
                     <div class="mission-item">
                         <div class="mission-title">SACEM (Mars 2021 - Janv. 2022)</div>
                         <div class="description">
-                            Développement d’un ETL pour l’ingestion des œuvres audiovisuelles.
-                            <br><strong>Tech :</strong> Java 19, GitLab, AWS, Terraform
+                            Développement d'un ETL pour l'ingestion des œuvres audiovisuelles.
+                            <br><strong>Tech :</strong> Java, GitLab, AWS, Terraform
                         </div>
                     </div>
                 </div>
 
                 <!-- SII -->
                 <div class="experience-item">
-                    <h3>Ingénieur d’Études</h3>
+                    <h3>Ingénieur d'Études</h3>
                     <div class="company">Groupe SII</div>
                     <div class="period">Juil. 2019 - Mars 2020</div>
                     <div class="location">Île-de-France</div>
@@ -292,7 +299,7 @@
 
                 <!-- Akka -->
                 <div class="experience-item">
-                    <h3>Ingénieur d’Études</h3>
+                    <h3>Ingénieur d'Études</h3>
                     <div class="company">Akka Technologies</div>
                     <div class="period">Oct. 2018 - Juin 2019</div>
                     <div class="location">Bordeaux</div>
